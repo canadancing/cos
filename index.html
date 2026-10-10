@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Caribbean of Soul | Authentic Soul Food on North Shore, Vancouver</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Authentic Caribbean soul food by Chef Valma in North Vancouver. Slow-cooked oxtail, jerk chicken, and handmade Jamaican patties. Free local delivery Friday & Saturday in North Van.">
+  <meta name="keywords" content="Caribbean of Soul, North Vancouver Caribbean food, Jamaican patties North Vancouver, jerk chicken Lonsdale, oxtail Vancouver, soul food North Shore">
+  <meta name="author" content="Caribbean of Soul">
+  <link rel="canonical" href="https://cos.reopenai.net">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:url" content="https://cos.reopenai.net/">
+  <meta property="og:title" content="Caribbean of Soul | Authentic Caribbean Soul Food">
+  <meta property="og:description" content="Homemade food with love on Lonsdale Ave since 2013. Oxtail, Jerk Chicken, Jamaican Patties & Free North Van delivery.">
+  <meta property="og:image" content="https://cos.reopenai.net/assets/images/hero-dish.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cos.reopenai.net/">
+  <meta property="twitter:title" content="Caribbean of Soul | North Vancouver">
+  <meta property="twitter:description" content="Authentic Soul Food & Jamaican specialties by Chef Valma. 1650 Lonsdale Ave.">
+  <meta property="twitter:image" content="https://cos.reopenai.net/assets/images/hero-dish.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
+
+  <!-- Google Fonts: Outfit & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080d1a',
+              charcoal: '#0f172a',
+              card: '#162036',
+              border: '#23324d',
+              amber: '#f59e0b',
+              orange: '#ea580c',
+              gold: '#fbbf24',
+              emerald: '#10b981',
+              spice: '#dc2626'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            'glow-amber': '0 0 35px -5px rgba(245, 158, 11, 0.25)',
+            'glow-orange': '0 0 45px -8px rgba(234, 88, 12, 0.35)',
+            'inner-glow': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS Animations & Glassmorphism -->
+  <style>
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.92; transform: scale(1.02); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s ease-in-out infinite;
+    }
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(22, 32, 54, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .text-gradient-amber {
+      background: linear-gradient(135deg, #fbbf24 0%, #ea580c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #fef08a 0%, #f59e0b 60%, #ea580c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* Hide scrollbar for category tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD for Local Restaurant SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Caribbean of Soul",
+    "image": "https://cos.reopenai.net/assets/images/hero-dish.jpg",
+    "description": "Authentic Caribbean Soul Food on North Shore. Homemade food with love by Chef Valma since 2013.",
+    "servesCuisine": ["Caribbean", "Jamaican", "Soul Food"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1650 Lonsdale Ave",
+      "addressLocality": "North Vancouver",
+      "addressRegion": "BC",
+      "postalCode": "V7M 2J6",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.3242,
+      "longitude": -123.0725
+    },
+    "url": "https://cos.reopenai.net",
+    "telephone": "+16040000000",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/caribbeanofsoul"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white">
+
+  <!-- Top Announcement Bar: Free Delivery & Schedule Alert -->
+  <div class="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 text-white text-xs sm:text-sm font-medium py-2 px-4 shadow-inner">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
+        <span class="inline-flex items-center justify-center bg-black/20 text-white px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider">
+          North Van Special
+        </span>
+        <span class="truncate">
+          🚚 <strong>Free Local Delivery</strong> on Friday & Saturday (11:30 AM – 2:30 PM) • Advance Orders Required
+        </span>
+      </div>
+      <a href="#delivery" class="hidden sm:inline-flex items-center gap-1 text-white hover:text-amber-200 underline font-semibold transition shrink-0 text-xs">
+        Delivery Rules <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo / Identity -->
+        <a href="#" class="group flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-950/50 group-hover:scale-105 transition-transform">
+            <span class="text-2xl">🌴</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-amber-400 transition">
+                Caribbean of Soul
+              </span>
+            </div>
+            <p class="text-[11px] font-medium tracking-wide text-amber-400/90 uppercase">
+              Authentic Soul Food • Est. 2013
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#menu" class="text-slate-300 hover:text-amber-400 transition flex items-center gap-1.5">
+            <i data-lucide="utensils" class="w-4 h-4 text-amber-500"></i> Menu
+          </a>
+          <a href="#hours-location" class="text-slate-300 hover:text-amber-400 transition flex items-center gap-1.5">
+            <i data-lucide="clock" class="w-4 h-4 text-amber-500"></i> Hours & Location
+          </a>
+          <a href="#delivery" class="text-slate-300 hover:text-amber-400 transition flex items-center gap-1.5">
+            <i data-lucide="truck" class="w-4 h-4 text-amber-500"></i> Local Delivery
+          </a>
+          <a href="#about" class="text-slate-300 hover:text-amber-400 transition flex items-center gap-1.5">
+            <i data-lucide="heart" class="w-4 h-4 text-amber-500"></i> Chef Valma
+          </a>
+        </nav>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <!-- Live Store Status Indicator (Calculated) -->
+          <div id="liveStatusPill" class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span id="liveStatusText" class="text-slate-300 font-medium">Checking hours...</span>
+          </div>
+
+          <button onclick="openOrderModal()" class="relative group overflow-hidden bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-orange-950/40 transition active:scale-95 flex items-center gap-2 text-sm">
+            <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+            <span>Order in Advance</span>
+          </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-slate-300 hover:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer / Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-brand-charcoal/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs text-slate-400">
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 1650 Lonsdale Ave, North Van
+        </span>
+        <span class="text-amber-400 font-medium">Thu–Sun 11AM–6PM</span>
+      </div>
+      <a href="#menu" class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 font-medium text-base">
+        <i data-lucide="utensils" class="w-5 h-5 text-amber-500"></i> Explore Menu
+      </a>
+      <a href="#hours-location" class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 font-medium text-base">
+        <i data-lucide="clock" class="w-5 h-5 text-amber-500"></i> Hours & Directions
+      </a>
+      <a href="#delivery" class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 font-medium text-base">
+        <i data-lucide="truck" class="w-5 h-5 text-amber-500"></i> Free Local Delivery
+      </a>
+      <a href="#about" class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 font-medium text-base">
+        <i data-lucide="heart" class="w-5 h-5 text-amber-500"></i> Chef Valma's Story
+      </a>
+      <a href="#contact" class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-200 hover:bg-slate-800 font-medium text-base">
+        <i data-lucide="instagram" class="w-5 h-5 text-amber-500"></i> Instagram & Inquiries
+      </a>
+      <div class="pt-2">
+        <button onclick="openOrderModal(); toggleMobileMenu();" class="w-full py-3 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl font-bold text-white text-center shadow-md flex items-center justify-center gap-2">
+          <i data-lucide="calendar-plus" class="w-5 h-5"></i> Start Advance Order
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-8 pb-16 sm:pt-14 sm:pb-24 overflow-hidden">
+    <!-- Ambient Radial Gradients -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-600/15 via-orange-600/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -top-10 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Heritage Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-amber-500/30 text-xs sm:text-sm text-amber-300 font-semibold shadow-inner-glow">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <span>Est. 2013 • Chef Valma’s Kitchen on Lonsdale</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+            Authentic <span class="text-gradient-gold font-display italic font-bold">Caribbean Soul Food</span> on the North Shore.
+          </h1>
+
+          <!-- Subheading -->
+          <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Slow-cooked oxtail, deeply spiced jerk chicken, flaky Jamaican patties, and warm coco bread. Crafted with homemade love and family tradition in North Vancouver.
+          </p>
+
+          <!-- Free Delivery Floating Badge on Mobile / Hero -->
+          <div class="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-r from-orange-950/60 to-slate-900/90 border border-orange-500/30 flex items-center gap-3.5 text-left max-w-xl mx-auto lg:mx-0 shadow-lg">
+            <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+              <i data-lucide="truck" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-bold text-amber-300 uppercase tracking-wide">
+                Free Local Delivery • North Vancouver Only
+              </div>
+              <div class="text-xs sm:text-sm text-slate-300">
+                Fridays & Saturdays (11:30 AM – 2:30 PM). Advance booking recommended.
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#menu" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-base shadow-lg shadow-orange-900/40 hover:shadow-orange-900/60 transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2.5">
+              <i data-lucide="book-open" class="w-5 h-5"></i>
+              <span>View Digital Menu</span>
+            </a>
+            
+            <button onclick="openOrderModal()" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 text-white font-semibold text-base transition flex items-center justify-center gap-2.5 hover:border-amber-500/50">
+              <i data-lucide="message-circle" class="w-5 h-5 text-amber-400"></i>
+              <span>Pre-Order on WhatsApp / DM</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>100% Halal Ingredients</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>Fresh & Frozen Bulk Packs</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>4.9★ Local North Van Rating</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+
+            <!-- Hero Image Frame -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
+              <img src="assets/images/hero-dish.jpg" alt="Caribbean of Soul Slow Cooked Oxtail, Jerk Chicken and Fried Plantains" class="w-full h-80 sm:h-96 lg:h-[460px] object-cover hover:scale-105 transition-transform duration-700">
+              
+              <!-- Subtle overlay gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent opacity-80 pointer-events-none"></div>
+
+              <!-- Chef Badge on Image -->
+              <div class="absolute top-4 left-4 glass-card px-3.5 py-2 rounded-xl flex items-center gap-2.5 border border-white/10 shadow-lg">
+                <span class="text-xl">👩🏾‍🍳</span>
+                <div>
+                  <p class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Chef & Founder</p>
+                  <p class="text-xs font-semibold text-white">Valma's Secret Recipe</p>
+                </div>
+              </div>
+
+              <!-- Dish Feature Badge at bottom -->
+              <div class="absolute bottom-4 left-4 right-4 glass-card p-4 rounded-xl border border-white/10 shadow-xl">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h2 class="text-sm sm:text-base font-bold text-white flex items-center gap-1.5">
+                      Braised Oxtail & Jerk Chicken Plate
+                    </h2>
+                    <p class="text-xs text-slate-300">Served with Island Rice, Grilled Veg & Plantain</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-lg font-extrabold text-amber-400">$25</span>
+                    <span class="block text-[10px] text-slate-400 uppercase">Per Plate</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating Badge: Pickup & Delivery -->
+            <div class="absolute -bottom-5 -left-4 sm:-left-6 glass-card px-4 py-2.5 rounded-xl border border-amber-500/40 shadow-2xl flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                📍
+              </div>
+              <div class="text-xs">
+                <span class="font-bold text-white block">1650 Lonsdale Ave</span>
+                <span class="text-slate-400">North Vancouver, BC</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info Strip / Operating Highlights -->
+  <section class="border-y border-slate-800/80 bg-brand-charcoal/50 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+        
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Open Days</div>
+            <div class="text-sm font-bold text-white">Thu – Sun: 11AM – 6PM</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">North Shore Kitchen</div>
+            <div class="text-sm font-bold text-white">1650 Lonsdale Ave</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i data-lucide="package" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Free Local Delivery</div>
+            <div class="text-sm font-bold text-white">Fri & Sat (11:30–2:30)</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Authentic Soul Food</div>
+            <div class="text-sm font-bold text-white">Homemade With Love</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Menu Section -->
+  <section id="menu" class="py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full inline-block">
+          Authentic Island Kitchen
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Handcrafted <span class="text-gradient-amber font-display italic">Soul Menu</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Prepared fresh daily with traditional Caribbean spices, aromatic pimento, Scotch bonnet pepper, and tender love.
+        </p>
+      </div>
+
+      <!-- Allergy / Dietary Advisory Banner -->
+      <div class="max-w-3xl mx-auto mb-8 bg-amber-950/30 border border-amber-500/30 rounded-xl p-4 flex items-center gap-3 text-amber-200 text-xs sm:text-sm shadow-sm">
+        <i data-lucide="info" class="w-5 h-5 text-amber-400 shrink-0"></i>
+        <span>
+          <strong>Allergy & Dietary Note:</strong> Please notify Chef Valma of any vegetable or food allergies when placing your advance order. Homemade food with love.
+        </span>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-10 text-sm">
+        <button onclick="filterMenu('all')" id="tab-all" class="menu-tab-btn active px-5 py-2.5 rounded-full font-semibold transition shrink-0 bg-amber-500 text-white shadow-md shadow-orange-950/40">
+          All Offerings
+        </button>
+        <button onclick="filterMenu('plates')" id="tab-plates" class="menu-tab-btn px-5 py-2.5 rounded-full font-medium transition shrink-0 bg-brand-card hover:bg-slate-800 text-slate-300 border border-slate-700">
+          Main Plates
+        </button>
+        <button onclick="filterMenu('bites')" id="tab-bites" class="menu-tab-btn px-5 py-2.5 rounded-full font-medium transition shrink-0 bg-brand-card hover:bg-slate-800 text-slate-300 border border-slate-700">
+          Quick Bites & Combos
+        </button>
+        <button onclick="filterMenu('packs')" id="tab-packs" class="menu-tab-btn px-5 py-2.5 rounded-full font-medium transition shrink-0 bg-brand-card hover:bg-slate-800 text-slate-300 border border-slate-700">
+          Frozen & Take-Home Packs
+        </button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="menuItemsGrid">
+        
+        <!-- Item 1: Oxtail (Main Plate) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between" data-category="plates">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/hero-dish.jpg" alt="Braised Caribbean Oxtail" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Chef's Signature
+              </span>
+              <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $25
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Braised Oxtail Plate
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Slow-braised until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-[11px] text-slate-400">
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🍛 Island Rice</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🍌 Fried Plantain</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🥦 Grilled Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Braised Oxtail Plate', 25)" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>Add to Advance Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 2: Jerk Chicken (Main Plate) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between" data-category="plates">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/hero-dish.jpg" alt="Authentic Jerk Chicken" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 object-right">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-orange-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Customer Favorite
+              </span>
+              <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $20
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Authentic Jerk Chicken Plate
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Marinated for 24+ hours in Chef Valma’s signature allspice, thyme, garlic, and Scotch bonnet marinade, then char-grilled to juicy perfection. Served with Island rice, grilled veg, and fried plantain.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-[11px] text-slate-400">
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🔥 Char-Grilled</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🍛 Island Rice</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🍌 Fried Plantain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Authentic Jerk Chicken Plate', 20)" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>Add to Advance Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 3: Family Platter (Platters / Serves 5) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border-2 border-amber-500/40 hover:border-amber-400 transition-all duration-300 flex flex-col justify-between relative shadow-glow-amber" data-category="plates">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/hero-dish.jpg" alt="Family Platter Feeds 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Feeds 5 People
+              </span>
+              <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $100
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Caribbean Family Platter
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                The ultimate North Shore family feast! Includes 5 generous pieces of Jerk Chicken, tender braised Oxtail, a large tray of Island-style rice, fried sweet plantains, and grilled seasonal vegetables.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-[11px] text-amber-300">
+                <span class="bg-amber-950/60 border border-amber-600/40 px-2.5 py-1 rounded-md">⭐ 5x Jerk Chicken</span>
+                <span class="bg-amber-950/60 border border-amber-600/40 px-2.5 py-1 rounded-md">⭐ Braised Oxtail</span>
+                <span class="bg-amber-950/60 border border-amber-600/40 px-2.5 py-1 rounded-md">⭐ Feeds 5 ($20/person)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Caribbean Family Platter (Feeds 5)', 100)" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white text-sm font-bold shadow-md transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i>
+              <span>Add Family Platter ($100)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 4: Jamaican Beef Patty Combo (Quick Bites) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between" data-category="bites">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/patties-bread.jpg" alt="Jamaican Beef Patty Combo with Warm Coco Bread" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Classic Combo
+              </span>
+              <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $12
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Jamaican Beef Patty Combo
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Freshly baked, ultra-flaky Jamaican beef patty tucked inside warm, slightly sweet Coco Bread, paired with a chilled beverage of your choice.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-[11px] text-slate-400">
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🥟 Beef Patty</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🍞 Warm Coco Bread</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🥤 Cold Drink</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Jamaican Beef Patty Combo', 12)" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>Add to Advance Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 5: Packaged Jamaican Patties (Bulk / Frozen Packs) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between" data-category="packs">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/patties-bread.jpg" alt="Jamaican Patties by the Dozen" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Fresh or Frozen
+              </span>
+              <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $84 <span class="text-xs font-normal text-slate-300">/ dozen</span>
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Jamaican Patties (Dozen)
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Stock your home freezer with Chef Valma’s handmade patties. Choose between <strong>Beef, Chicken, or Veggie</strong>. Perfect for quick lunches or after-school snacks ($7 each).
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2 text-[11px] text-slate-400">
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">📦 12 Patties</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">❄️ Freezer Ready</span>
+                <span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">🌱 Veggie Option</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Jamaican Patties Dozen (Fresh/Frozen)', 84)" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>Add 1 Dozen ($84)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 6: Coco Bread & Roti Shells (Take-Home Packs) -->
+        <div class="menu-item-card group glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between" data-category="packs">
+          <div>
+            <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+              <img src="assets/images/patties-bread.jpg" alt="Coco Bread and Roti Shells" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 object-right">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+              <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                Fresh Island Bakes
+              </span>
+              <span class="absolute bottom-3 right-3 text-xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                $20 <span class="text-xs font-normal text-slate-300">/ pack</span>
+              </span>
+            </div>
+
+            <div class="p-6 space-y-3">
+              <div class="flex items-start justify-between">
+                <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                  Coco Bread & Roti Shells
+                </h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Authentic Caribbean breads baked with coconut sweetness. Stock up on tender, flaky breads ready for your curries, patties, and stews.
+              </p>
+              <div class="space-y-2 pt-1 text-xs text-slate-300">
+                <div class="flex justify-between border-b border-slate-800 pb-1">
+                  <span>• Coco Bread (1 Dozen)</span>
+                  <span class="font-bold text-amber-400">$20</span>
+                </div>
+                <div class="flex justify-between border-b border-slate-800 pb-1">
+                  <span>• Traditional Roti Shells (Pack of 3)</span>
+                  <span class="font-bold text-amber-400">$20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="addToOrderQuick('Coco Bread (1 Dozen)', 20)" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>Add Coco Bread ($20)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Action Under Menu -->
+      <div class="mt-12 text-center">
+        <button onclick="openOrderModal()" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-base shadow-lg shadow-orange-950/40 transition">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span>Build Custom Advance Order (Pickup or Delivery)</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Schedule, Free Delivery & Location Section -->
+  <section id="hours-location" class="py-16 sm:py-24 bg-brand-charcoal/70 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-orange-400 bg-orange-500/10 border border-orange-500/20 px-3 py-1 rounded-full inline-block">
+          Visit & Delivery Guidelines
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Operating Hours, Delivery & Location
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Visit Chef Valma on Lonsdale Avenue or take advantage of our exclusive weekend local delivery service across North Vancouver.
+        </p>
+      </div>
+
+      <!-- 3 Key Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        
+        <!-- Card 1: Operating Hours -->
+        <div class="glass-card rounded-2xl p-7 border border-slate-800 relative flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center mb-6">
+              <i data-lucide="calendar" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Operating Hours</h3>
+            <p class="text-xs text-slate-400 mb-6">Freshly made hot dishes served during service days.</p>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex items-center justify-between p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/20">
+                <span class="font-semibold text-emerald-300 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Thursday
+                </span>
+                <span class="font-bold text-white">11:00 AM – 6:00 PM</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/20">
+                <span class="font-semibold text-emerald-300 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Friday
+                </span>
+                <span class="font-bold text-white">11:00 AM – 6:00 PM</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/20">
+                <span class="font-semibold text-emerald-300 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Saturday
+                </span>
+                <span class="font-bold text-white">11:00 AM – 6:00 PM</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/20">
+                <span class="font-semibold text-emerald-300 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Sunday
+                </span>
+                <span class="font-bold text-white">11:00 AM – 6:00 PM</span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400">
+                <span>Monday – Wednesday</span>
+                <span class="font-medium text-amber-500/90 text-xs uppercase tracking-wider">Kitchen Prep Days</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-2">
+            <i data-lucide="info" class="w-4 h-4 text-amber-400 shrink-0"></i>
+            <span>Advance pre-orders highly recommended to ensure availability!</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Free Local Delivery (Anchor for #delivery) -->
+        <div id="delivery" class="glass-card rounded-2xl p-7 border-2 border-orange-500/40 relative flex flex-col justify-between shadow-glow-orange bg-gradient-to-b from-brand-card to-orange-950/20">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/40 text-orange-400 flex items-center justify-center mb-6">
+              <i data-lucide="truck" class="w-6 h-6"></i>
+            </div>
+            
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-bold text-white">Free Local Delivery</h3>
+              <span class="px-2.5 py-0.5 rounded-full bg-orange-500 text-white font-bold text-[10px] uppercase tracking-wider">
+                Weekend Only
+              </span>
+            </div>
+            
+            <p class="text-xs text-slate-300 mb-6">
+              Delivered straight to your doorstep exclusively on the North Shore.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-orange-500/20 space-y-1.5">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+                  <i data-lucide="calendar" class="w-4 h-4"></i> Available Delivery Days
+                </div>
+                <p class="font-semibold text-white">Every Friday & Saturday</p>
+                <p class="text-xs text-slate-400">Delivery Window: 11:30 AM – 2:30 PM</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-orange-500/20 space-y-1.5">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+                  <i data-lucide="map" class="w-4 h-4"></i> Geographic Coverage
+                </div>
+                <p class="font-semibold text-white">North Vancouver Residents Only</p>
+                <p class="text-xs text-slate-400">From Lower Lonsdale to Lynn Valley, Deep Cove & Capilano.</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-orange-500/20 space-y-1.5">
+                <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+                  <i data-lucide="alert-circle" class="w-4 h-4"></i> Advance Booking
+                </div>
+                <p class="font-semibold text-white">Advance Orders Required</p>
+                <p class="text-xs text-slate-400">Order before Thursday 8 PM for weekend delivery slots.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800">
+            <button onclick="openOrderModal('delivery')" class="w-full py-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-sm shadow transition flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> Book Weekend Delivery
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Location & Pickup -->
+        <div class="glass-card rounded-2xl p-7 border border-slate-800 relative flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center mb-6">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-2">North Shore Location</h3>
+            <p class="text-xs text-slate-400 mb-6">Conveniently located in the heart of Lonsdale.</p>
+
+            <div class="space-y-4">
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-700 space-y-2">
+                <div class="text-xs font-bold text-amber-400 uppercase tracking-wider">Pickup Address</div>
+                <p class="font-extrabold text-white text-base">1650 Lonsdale Ave</p>
+                <p class="text-xs text-slate-300">North Vancouver, BC V7M 2J6</p>
+                <p class="text-[11px] text-slate-400">Near 16th Street & Lonsdale Ave. Easy street parking.</p>
+              </div>
+
+              <!-- Interactive Direction Action -->
+              <div class="pt-2">
+                <a href="https://maps.google.com/?q=1650+Lonsdale+Ave+North+Vancouver+BC" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 font-semibold text-sm border border-slate-700 hover:border-amber-500/50 transition flex items-center justify-center gap-2">
+                  <i data-lucide="navigation" class="w-4 h-4 text-amber-400"></i>
+                  <span>Open in Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map Preview -->
+          <div class="mt-6 pt-4 border-t border-slate-800 overflow-hidden rounded-xl">
+            <iframe 
+              title="Caribbean of Soul Location"
+              src="https://maps.google.com/maps?q=1650+Lonsdale+Ave,+North+Vancouver,+BC&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" 
+              height="150" 
+              style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg) contrast(95%);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chef Valma & Heritage Story Section -->
+  <section id="about" class="py-16 sm:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-800 relative overflow-hidden bg-gradient-to-br from-brand-card via-slate-900 to-brand-charcoal">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-bold text-amber-400 uppercase tracking-widest">
+              Since 2013 on the North Shore
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+              "Homemade food with love is the <span class="text-gradient-gold font-display italic">only way</span> we cook."
+            </h2>
+            
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Founded by Chef Valma, <strong>Caribbean of Soul</strong> has been nourishing North Vancouver since 2013. We believe soul food isn't just a recipe—it is patience, tradition, and heart.
+            </p>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              From hand-marinating our jerk chicken with traditional pimento berries to slow-simmering our oxtail so the gravy turns rich and gelatinous, every plate is prepared fresh. Whether you pick up hot dinner after work or stock your home freezer with our dozen patty packs, we treat you like family.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <div>
+                <p class="font-display italic text-2xl text-amber-400 font-bold">Valma</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Owner & Head Chef</p>
+              </div>
+
+              <div class="hidden sm:block w-px h-10 bg-slate-700"></div>
+
+              <div class="flex items-center gap-3">
+                <a href="https://instagram.com/caribbeanofsoul" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-amber-400 font-medium transition">
+                  <i data-lucide="instagram" class="w-5 h-5 text-pink-500"></i> Follow @caribbeanofsoul
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-sm rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+              <img src="assets/images/hero-dish.jpg" alt="Chef Valma Caribbean Cooking" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <div class="text-amber-400 font-bold text-sm">North Vancouver, BC</div>
+                  <div class="text-white font-medium text-xs">Authentic Caribbean Kitchen • Est. 2013</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Delivery & Order FAQs -->
+  <section class="py-16 sm:py-20 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-12 space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Frequently Asked Questions</h2>
+        <p class="text-slate-400 text-sm">Everything you need to know about our food, ordering, and weekend delivery.</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-xl bg-slate-900/60 border border-slate-800 overflow-hidden transition">
+          <button onclick="toggleFaq(1)" class="w-full py-4 px-6 text-left flex items-center justify-between font-semibold text-white hover:text-amber-400 transition text-sm sm:text-base">
+            <span>How do I qualify for Free Friday & Saturday delivery?</span>
+            <i data-lucide="chevron-down" id="faq-icon-1" class="w-5 h-5 text-amber-500 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-1" class="hidden px-6 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Our free delivery program is exclusive to North Vancouver residents on Fridays and Saturdays between 11:30 AM and 2:30 PM. Because our delivery capacity is limited, we require orders to be placed in advance. Simply message us on WhatsApp or Instagram DM with your address and desired items!
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-xl bg-slate-900/60 border border-slate-800 overflow-hidden transition">
+          <button onclick="toggleFaq(2)" class="w-full py-4 px-6 text-left flex items-center justify-between font-semibold text-white hover:text-amber-400 transition text-sm sm:text-base">
+            <span>How far in advance should I order?</span>
+            <i data-lucide="chevron-down" id="faq-icon-2" class="w-5 h-5 text-amber-500 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-2" class="hidden px-6 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            For weekend free local delivery, we recommend placing your order by Thursday evening to secure your preferred delivery window. For same-day pickup (Thu–Sun), we recommend ordering at least 45–60 minutes in advance to ensure your oxtail and jerk chicken are piping hot.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-xl bg-slate-900/60 border border-slate-800 overflow-hidden transition">
+          <button onclick="toggleFaq(3)" class="w-full py-4 px-6 text-left flex items-center justify-between font-semibold text-white hover:text-amber-400 transition text-sm sm:text-base">
+            <span>How do I bake or reheat the frozen Jamaican patties?</span>
+            <i data-lucide="chevron-down" id="faq-icon-3" class="w-5 h-5 text-amber-500 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-3" class="hidden px-6 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Preheat your oven or toaster oven to 375°F (190°C). Place frozen patties directly on a baking sheet lined with parchment paper. Bake for 18–22 minutes until the crust is golden and flaky with the interior steaming hot. For coco bread, wrap in foil and warm for 5 minutes.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-xl bg-slate-900/60 border border-slate-800 overflow-hidden transition">
+          <button onclick="toggleFaq(4)" class="w-full py-4 px-6 text-left flex items-center justify-between font-semibold text-white hover:text-amber-400 transition text-sm sm:text-base">
+            <span>Can I customize the Family Platter or order for catering?</span>
+            <i data-lucide="chevron-down" id="faq-icon-4" class="w-5 h-5 text-amber-500 transition-transform duration-300"></i>
+          </button>
+          <div id="faq-content-4" class="hidden px-6 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes! Chef Valma accommodates special family events, office lunches, and celebrations across the North Shore. Message us with your headcount, and we will tailor portions and dietary accommodations (vegetable options, spicy vs. mild).
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How to Order & Pre-Order Assistant (Footer Pre-CTA) -->
+  <section id="contact" class="py-16 sm:py-20 bg-gradient-to-b from-brand-charcoal to-brand-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl">
+        <div class="text-center max-w-2xl mx-auto space-y-4 mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full inline-block">
+            Simple 3-Step Ordering
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">How to Place an Advance Order</h2>
+          <p class="text-slate-300 text-sm sm:text-base">
+            We handle each order personally to guarantee freshness and accommodate any allergies or special notes.
+          </p>
+        </div>
+
+        <!-- Steps -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-center">
+          
+          <div class="space-y-3 p-5 rounded-2xl bg-slate-900/70 border border-slate-800">
+            <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-extrabold flex items-center justify-center mx-auto text-lg">
+              1
+            </div>
+            <h3 class="font-bold text-white text-base">Select Your Dishes</h3>
+            <p class="text-xs text-slate-400">
+              Pick your favourite oxtail, jerk chicken, patty combo, or frozen dozens for home.
+            </p>
+          </div>
+
+          <div class="space-y-3 p-5 rounded-2xl bg-slate-900/70 border border-slate-800">
+            <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-extrabold flex items-center justify-center mx-auto text-lg">
+              2
+            </div>
+            <h3 class="font-bold text-white text-base">Choose Pickup or Delivery</h3>
+            <p class="text-xs text-slate-400">
+              Pick up at 1650 Lonsdale Ave (Thu–Sun) or request free Friday/Saturday North Van delivery.
+            </p>
+          </div>
+
+          <div class="space-y-3 p-5 rounded-2xl bg-slate-900/70 border border-slate-800">
+            <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-extrabold flex items-center justify-center mx-auto text-lg">
+              3
+            </div>
+            <h3 class="font-bold text-white text-base">Connect via WhatsApp or DM</h3>
+            <p class="text-xs text-slate-400">
+              Send your order summary directly to Chef Valma to confirm timing and payment.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Direct Actions -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+          <button onclick="openOrderModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-base shadow-lg transition flex items-center justify-center gap-2">
+            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+            <span>Open Pre-Order Form</span>
+          </button>
+          
+          <a href="https://instagram.com/caribbeanofsoul" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-base border border-slate-700 transition flex items-center justify-center gap-2">
+            <i data-lucide="instagram" class="w-5 h-5 text-pink-500"></i>
+            <span>Message @caribbeanofsoul</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark border-t border-slate-800/80 pt-12 pb-24 sm:pb-12 text-slate-400 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">🌴</span>
+            <span class="font-display font-bold text-xl text-white">Caribbean of Soul</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Authentic Soul Food & Jamaican specialties made with love by Chef Valma. Serving the North Vancouver community since 2013.
+          </p>
+          <div class="pt-1 flex items-center gap-3">
+            <a href="https://instagram.com/caribbeanofsoul" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-400 flex items-center justify-center transition" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://maps.google.com/?q=1650+Lonsdale+Ave+North+Vancouver+BC" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-400 flex items-center justify-center transition" aria-label="Google Maps">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Quick Navigation</h4>
+          <ul class="space-y-1.5 text-xs text-slate-400">
+            <li><a href="#menu" class="hover:text-amber-400 transition">Digital Menu</a></li>
+            <li><a href="#hours-location" class="hover:text-amber-400 transition">Operating Hours</a></li>
+            <li><a href="#delivery" class="hover:text-amber-400 transition">Free North Van Delivery</a></li>
+            <li><a href="#about" class="hover:text-amber-400 transition">About Chef Valma</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours & Pickups -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Service Schedule</h4>
+          <p class="text-xs text-slate-300"><strong>Thursday – Sunday:</strong> 11:00 AM – 6:00 PM</p>
+          <p class="text-xs text-slate-300"><strong>Monday – Wednesday:</strong> Kitchen Prep Days</p>
+          <p class="text-xs text-amber-400 pt-1"><strong>Free Local Delivery:</strong> Fri & Sat 11:30 AM – 2:30 PM</p>
+        </div>
+
+        <!-- Col 4: Location -->
+        <div class="space-y-2">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Kitchen Address</h4>
+          <p class="text-xs text-slate-300">1650 Lonsdale Ave</p>
+          <p class="text-xs text-slate-400">North Vancouver, BC V7M 2J6</p>
+          <p class="text-xs text-slate-400">Instagram: <a href="https://instagram.com/caribbeanofsoul" target="_blank" class="text-amber-400 underline">@caribbeanofsoul</a></p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2013 – 2026 Caribbean of Soul. All rights reserved. • North Vancouver, British Columbia.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-slate-400">cos.reopenai.net</span>
+          <span>•</span>
+          <span>Homemade Food with Love</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Mobile Floating Order Bar (Sticky at bottom on mobile) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-30 p-3 bg-brand-charcoal/95 backdrop-blur-lg border-t border-slate-800 shadow-2xl flex items-center justify-between gap-3">
+    <div class="leading-tight pl-1">
+      <div class="text-[11px] text-amber-400 font-bold uppercase tracking-wider">Free Delivery Fri & Sat</div>
+      <div class="text-xs text-slate-300 font-medium">1650 Lonsdale Ave</div>
+    </div>
+    <button onclick="openOrderModal()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-sm shadow-md active:scale-95 transition flex items-center gap-1.5 shrink-0">
+      <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+      <span>Order in Advance</span>
+    </button>
+  </div>
+
+  <!-- Interactive Pre-Order Modal Dialog -->
+  <div id="orderModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-lg rounded-2xl bg-brand-card border border-slate-700 shadow-2xl p-6 sm:p-7 overflow-y-auto max-h-[92vh] space-y-5">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <div class="flex items-center gap-2.5">
+          <span class="text-2xl">🌴</span>
+          <div>
+            <h3 class="text-lg font-bold text-white">Advance Order Inquiry</h3>
+            <p class="text-xs text-slate-400">Caribbean of Soul • North Vancouver</p>
+          </div>
+        </div>
+        <button onclick="closeOrderModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition" aria-label="Close modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Order Form -->
+      <form id="orderForm" onsubmit="event.preventDefault();" class="space-y-4 text-xs sm:text-sm">
+        
+        <!-- Fulfillment Mode Selection -->
+        <div>
+          <label class="block text-slate-300 font-semibold mb-2">Order Type</label>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="fulfillment-radio-label flex items-center gap-2 p-3 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer hover:border-amber-500 transition">
+              <input type="radio" name="orderType" value="Pickup at 1650 Lonsdale Ave" checked class="text-amber-500 focus:ring-amber-500" onchange="updateFulfillment()">
+              <span class="text-white font-medium">Pickup (1650 Lonsdale)</span>
+            </label>
+            <label class="fulfillment-radio-label flex items-center gap-2 p-3 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer hover:border-amber-500 transition">
+              <input type="radio" name="orderType" value="Free Delivery (North Van Fri/Sat)" class="text-amber-500 focus:ring-amber-500" onchange="updateFulfillment()">
+              <span class="text-white font-medium">Free Delivery (Fri/Sat)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Name & Phone -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1" for="customerName">Your Name</label>
+            <input type="text" id="customerName" placeholder="e.g. Sarah M." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1" for="customerPhone">Phone / WhatsApp</label>
+            <input type="tel" id="customerPhone" placeholder="(604) 555-0199" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500">
+          </div>
+        </div>
+
+        <!-- Delivery Address (Conditional) -->
+        <div id="addressFieldGroup" class="hidden">
+          <label class="block text-slate-300 font-semibold mb-1" for="deliveryAddress">
+            North Vancouver Delivery Address <span class="text-amber-400">*</span>
+          </label>
+          <input type="text" id="deliveryAddress" placeholder="Street address & buzzer (North Van only)" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500">
+          <span class="text-[11px] text-slate-400 block mt-1">Free delivery is Friday & Saturday (11:30 AM – 2:30 PM).</span>
+        </div>
+
+        <!-- Quick Item Checklist -->
+        <div>
+          <label class="block text-slate-300 font-semibold mb-2">Select Dishes / Items</label>
+          <div class="space-y-2 max-h-48 overflow-y-auto p-2 bg-slate-900/80 rounded-xl border border-slate-800">
+            
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Braised Oxtail Plate ($25)" data-price="25">
+                <span>Braised Oxtail Plate</span>
+              </span>
+              <span class="text-amber-400 font-bold">$25</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Authentic Jerk Chicken Plate ($20)" data-price="20">
+                <span>Authentic Jerk Chicken Plate</span>
+              </span>
+              <span class="text-amber-400 font-bold">$20</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Family Platter ($100)" data-price="100">
+                <span>Family Platter (Feeds 5)</span>
+              </span>
+              <span class="text-amber-400 font-bold">$100</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Jamaican Beef Patty Combo ($12)" data-price="12">
+                <span>Jamaican Beef Patty Combo</span>
+              </span>
+              <span class="text-amber-400 font-bold">$12</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Jamaican Patties Dozen Fresh/Frozen ($84)" data-price="84">
+                <span>Jamaican Patties Dozen (Fresh/Frozen)</span>
+              </span>
+              <span class="text-amber-400 font-bold">$84</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Coco Bread Dozen ($20)" data-price="20">
+                <span>Coco Bread (1 Dozen)</span>
+              </span>
+              <span class="text-amber-400 font-bold">$20</span>
+            </label>
+
+            <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
+              <span class="flex items-center gap-2 text-slate-200">
+                <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="Roti Shells Pack of 3 ($20)" data-price="20">
+                <span>Roti Shells (Pack of 3)</span>
+              </span>
+              <span class="text-amber-400 font-bold">$20</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Special Notes / Allergy -->
+        <div>
+          <label class="block text-slate-300 font-semibold mb-1" for="specialNotes">
+            Special Requests / Food Allergies
+          </label>
+          <textarea id="specialNotes" rows="2" placeholder="e.g. Mild spice preference, peanut allergy, preferred pickup time..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="space-y-2 pt-2">
+          
+          <button type="button" onclick="sendOrderViaWhatsApp()" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition flex items-center justify-center gap-2 shadow-lg">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <span>Send Order via WhatsApp</span>
+          </button>
+
+          <button type="button" onclick="sendOrderViaInstagram()" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:opacity-95 text-white font-bold transition flex items-center justify-center gap-2 shadow">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+            <span>Order via Instagram DM (@caribbeanofsoul)</span>
+          </button>
+
+          <button type="button" onclick="copyOrderSummary()" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs border border-slate-700 transition flex items-center justify-center gap-2">
+            <i data-lucide="copy" class="w-4 h-4"></i>
+            <span id="copyBtnText">Copy Order Summary to Clipboard</span>
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 hidden px-5 py-3 rounded-xl bg-emerald-600 text-white font-semibold text-xs sm:text-sm shadow-2xl flex items-center gap-2 transition duration-300">
+    <i data-lucide="check-circle" class="w-4 h-4"></i>
+    <span id="toastMessage">Order summary copied!</span>
+  </div>
+
+  <!-- Client-side Interactivity Script -->
+  <script>
+    // Initialize Lucide Icons
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      initLiveHours();
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOpenIcon = document.getElementById('menuOpenIcon');
+    const menuCloseIcon = document.getElementById('menuCloseIcon');
+
+    function toggleMobileMenu() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuOpenIcon.classList.add('hidden');
+        menuCloseIcon.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuOpenIcon.classList.remove('hidden');
+        menuCloseIcon.classList.add('hidden');
+      }
+    }
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+    // Close mobile menu on clicking any navigation link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuOpenIcon.classList.remove('hidden');
+        menuCloseIcon.classList.add('hidden');
+      });
+    });
+
+    // Menu Category Filtering
+    function filterMenu(category) {
+      const cards = document.querySelectorAll('.menu-item-card');
+      const buttons = document.querySelectorAll('.menu-tab-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-amber-500', 'text-white', 'shadow-md', 'shadow-orange-950/40');
+        btn.classList.add('bg-brand-card', 'text-slate-300', 'border', 'border-slate-700');
+      });
+
+      const activeBtn = document.getElementById('tab-' + category);
+      if (activeBtn) {
+        activeBtn.classList.add('active', 'bg-amber-500', 'text-white', 'shadow-md', 'shadow-orange-950/40');
+        activeBtn.classList.remove('bg-brand-card', 'text-slate-300', 'border', 'border-slate-700');
+      }
+
+      // Filter grid cards
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(id) {
+      const content = document.getElementById('faq-content-' + id);
+      const icon = document.getElementById('faq-icon-' + id);
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all other FAQs
+      document.querySelectorAll('[id^="faq-content-"]').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('[id^="faq-icon-"]').forEach(el => el.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // Modal Handlers
+    const orderModal = document.getElementById('orderModal');
+
+    function openOrderModal(preferredType = 'pickup') {
+      orderModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+
+      if (preferredType === 'delivery') {
+        const deliveryRadio = document.querySelector('input[name="orderType"][value*="Delivery"]');
+        if (deliveryRadio) {
+          deliveryRadio.checked = true;
+          updateFulfillment();
+        }
+      }
+    }
+
+    function closeOrderModal() {
+      orderModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on background click
+    orderModal.addEventListener('click', (e) => {
+      if (e.target === orderModal) closeOrderModal();
+    });
+
+    // Update fulfillment (Show address field when delivery is selected)
+    function updateFulfillment() {
+      const selectedType = document.querySelector('input[name="orderType"]:checked')?.value || '';
+      const addressGroup = document.getElementById('addressFieldGroup');
+      if (selectedType.includes('Delivery')) {
+        addressGroup.classList.remove('hidden');
+      } else {
+        addressGroup.classList.add('hidden');
+      }
+    }
+
+    // Quick add from menu card to modal
+    function addToOrderQuick(itemName, price) {
+      openOrderModal();
+      document.querySelectorAll('.order-dish-cb').forEach(cb => {
+        if (cb.value.includes(itemName)) {
+          cb.checked = true;
+        }
+      });
+      showToast(`Added ${itemName} to your order draft!`);
+    }
+
+    // Build Order Summary String
+    function generateOrderText() {
+      const name = document.getElementById('customerName').value.trim() || 'A Customer';
+      const phone = document.getElementById('customerPhone').value.trim() || 'Not specified';
+      const orderType = document.querySelector('input[name="orderType"]:checked')?.value || 'Pickup';
+      const address = document.getElementById('deliveryAddress').value.trim();
+      const notes = document.getElementById('specialNotes').value.trim();
+
+      const selectedItems = [];
+      document.querySelectorAll('.order-dish-cb:checked').forEach(cb => {
+        selectedItems.push(cb.value);
+      });
+
+      let text = `🌴 *Caribbean of Soul - Advance Order Request*\n\n`;
+      text += `• *Customer:* ${name}\n`;
+      text += `• *Phone:* ${phone}\n`;
+      text += `• *Type:* ${orderType}\n`;
+
+      if (orderType.includes('Delivery') && address) {
+        text += `• *North Van Address:* ${address}\n`;
+      }
+
+      text += `\n*Selected Dishes / Items:*\n`;
+      if (selectedItems.length > 0) {
+        selectedItems.forEach(item => {
+          text += `  - ${item}\n`;
+        });
+      } else {
+        text += `  (No items pre-selected, inquiry for menu)\n`;
+      }
+
+      if (notes) {
+        text += `\n*Notes / Dietary:* ${notes}\n`;
+      }
+
+      text += `\n_Sent via cos.reopenai.net_`;
+      return text;
+    }
+
+    // Send order via WhatsApp
+    function sendOrderViaWhatsApp() {
+      const summary = generateOrderText();
+      const encoded = encodeURIComponent(summary);
+      // Opens WhatsApp web / app (Users can send to Chef Valma or copy)
+      window.open(`https://api.whatsapp.com/send?text=${encoded}`, '_blank');
+      showToast('Opening WhatsApp with your order summary!');
+    }
+
+    // Send order via Instagram
+    function sendOrderViaInstagram() {
+      copyOrderSummary();
+      window.open('https://instagram.com/caribbeanofsoul', '_blank');
+      showToast('Order summary copied! Opening @caribbeanofsoul DM.');
+    }
+
+    // Copy summary to clipboard
+    function copyOrderSummary() {
+      const summary = generateOrderText();
+      navigator.clipboard.writeText(summary).then(() => {
+        const copyBtnText = document.getElementById('copyBtnText');
+        if (copyBtnText) copyBtnText.textContent = 'Copied to Clipboard! ✓';
+        setTimeout(() => {
+          if (copyBtnText) copyBtnText.textContent = 'Copy Order Summary to Clipboard';
+        }, 3000);
+        showToast('Order summary copied to clipboard!');
+      }).catch(() => {
+        showToast('Order summary ready.');
+      });
+    }
+
+    // Toast Notification helper
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    }
+
+    // Live Restaurant Status Checker (America/Vancouver timezone)
+    function initLiveHours() {
+      try {
+        const now = new Date();
+        const vancouverTimeStr = now.toLocaleString("en-US", { timeZone: "America/Vancouver" });
+        const vancouverDate = new Date(vancouverTimeStr);
+
+        const day = vancouverDate.getDay(); // 0 = Sunday, 1 = Mon, ..., 4 = Thu, 5 = Fri, 6 = Sat
+        const hour = vancouverDate.getHours();
+        const minute = vancouverDate.getMinutes();
+        const currentTimeDecimal = hour + (minute / 60);
+
+        // Open Thu (4), Fri (5), Sat (6), Sun (0) from 11:00 AM to 6:00 PM (18:00)
+        const isOpenDay = (day === 0 || day >= 4);
+        const isOpenHour = (currentTimeDecimal >= 11.0 && currentTimeDecimal < 18.0);
+
+        const statusText = document.getElementById('liveStatusText');
+        const statusPill = document.getElementById('liveStatusPill');
+
+        if (statusText && statusPill) {
+          if (isOpenDay && isOpenHour) {
+            statusText.innerHTML = '<strong class="text-emerald-400">Open Now</strong> until 6:00 PM';
+          } else {
+            statusText.innerHTML = '<span class="text-amber-300">Opens Thu–Sun 11AM</span> (Pre-orders Open)';
+          }
+        }
+      } catch (err) {
+        console.warn('Status time calculation fallback', err);
+      }
+    }
+  </script>
+</body>
+</html>
