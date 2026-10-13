@@ -1,23 +1,6 @@
 {
   "items": [
     {
-      "badgeColor": "amber",
-      "badge": "Chef's Signature",
-      "price": 26,
-      "available": true,
-      "name": "Braised Oxtail Plate",
-      "priceSuffix": "",
-      "id": "braised-oxtail-plate",
-      "image": "assets/images/hero-dish.jpg",
-      "description": "Slow-braised until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.",
-      "category": "plates",
-      "highlights": [
-        "🍛 Island Rice",
-        "🍌 Fried Plantain",
-        "🥦 Grilled Veg"
-      ]
-    },
-    {
       "badgeColor": "orange",
       "badge": "Customer Favorite",
       "price": 20,
@@ -32,6 +15,23 @@
         "🔥 Char-Grilled",
         "🍛 Island Rice",
         "🍌 Fried Plantain"
+      ]
+    },
+    {
+      "badgeColor": "amber",
+      "badge": "Chef's Signature",
+      "price": 27,
+      "available": true,
+      "name": "Braised Oxtail Plate",
+      "priceSuffix": "",
+      "id": "braised-oxtail-plate",
+      "image": "assets/images/hero-dish.jpg",
+      "description": "Slow-braised until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.",
+      "category": "plates",
+      "highlights": [
+        "🍛 Island Rice",
+        "🍌 Fried Plantain",
+        "🥦 Grilled Veg"
       ]
     },
     {
