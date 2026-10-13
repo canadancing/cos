@@ -111,11 +111,11 @@ const server = http.createServer(async (req, res) => {
   // 4. GitHub Webhook auto-deploy endpoint
   if (pathname === '/api/webhook') {
     const { exec } = require('child_process');
-    exec('git -C /var/www/cos-food pull origin main', (error, stdout, stderr) => {
+    exec('git -C /var/www/cos-food fetch origin main && git -C /var/www/cos-food reset --hard origin/main', (error, stdout, stderr) => {
       if (error) {
-        console.error('Webhook git pull failed:', error);
+        console.error('Webhook deploy failed:', error);
       } else {
-        console.log('Webhook git pull succeeded:', stdout.trim());
+        console.log('Webhook deploy succeeded:', stdout.trim());
       }
     });
     res.writeHead(200, { 'Content-Type': 'application/json' });
