@@ -25,7 +25,7 @@ collections:
             widget: "list"
             summary: "{{fields.name}} — ${{fields.price}}"
             fields:
-              - { label: "Unique ID", name: "id", widget: "string", hint: "e.g. braised-oxtail-plate (lowercase letters and hyphens)" }
+              - { label: "Unique ID", name: "id", widget: "string", hint: "e.g. oxtail-plate (lowercase letters and hyphens)" }
               - { label: "Dish Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "select", options: [
                   { label: "Main Plates", value: "plates" },

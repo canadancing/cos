@@ -22,11 +22,11 @@
       "badge": "Chef's Signature",
       "price": 27,
       "available": true,
-      "name": "Braised Oxtail Plate",
+      "name": "Oxtail Plate",
       "priceSuffix": "",
-      "id": "braised-oxtail-plate",
+      "id": "oxtail-plate",
       "image": "assets/images/hero-dish.jpg",
-      "description": "Slow-braised until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.",
+      "description": "Slow-cooked until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.",
       "category": "plates",
       "highlights": [
         "🍛 Island Rice",
@@ -43,11 +43,11 @@
       "priceSuffix": "",
       "id": "caribbean-family-platter",
       "image": "assets/images/hero-dish.jpg",
-      "description": "The ultimate North Shore family feast! Includes 5 generous pieces of Jerk Chicken, tender braised Oxtail, a large tray of Island-style rice, fried sweet plantains, and grilled seasonal vegetables.",
+      "description": "The ultimate North Shore family feast! Includes 5 generous pieces of Jerk Chicken, tender savory Oxtail, a large tray of Island-style rice, fried sweet plantains, and grilled seasonal vegetables.",
       "category": "plates",
       "highlights": [
         "⭐ 5x Jerk Chicken",
-        "⭐ Braised Oxtail",
+        "⭐ Tender Oxtail",
         "⭐ Feeds 5 ($20/person)"
       ]
     },
@@ -59,7 +59,7 @@
       "name": "Jamaican Beef Patty Combo",
       "priceSuffix": "",
       "id": "jamaican-beef-patty-combo",
-      "image": "assets/images/patties-bread.jpg",
+      "image": "assets/images/patty-combo.jpg",
       "description": "Freshly baked, ultra-flaky Jamaican beef patty tucked inside warm, slightly sweet Coco Bread, paired with a chilled beverage of your choice.",
       "category": "bites",
       "highlights": [
@@ -76,7 +76,7 @@
       "name": "Jamaican Patties (Dozen)",
       "priceSuffix": "/ dozen",
       "id": "jamaican-patties-dozen",
-      "image": "assets/images/patties-bread.jpg",
+      "image": "assets/images/patties.jpg",
       "description": "Stock your home freezer with Chef Valma’s handmade patties. Choose between Beef, Chicken, or Veggie. Perfect for quick lunches or after-school snacks ($7 each).",
       "category": "packs",
       "highlights": [
@@ -93,7 +93,7 @@
       "name": "Coco Bread & Roti Shells",
       "priceSuffix": "/ pack",
       "id": "coco-bread-roti-shells",
-      "image": "assets/images/patties-bread.jpg",
+      "image": "assets/images/coco-bread.jpg",
       "description": "Authentic Caribbean breads baked with coconut sweetness. Stock up on tender, flaky breads ready for your curries, patties, and stews.",
       "category": "packs",
       "highlights": [
