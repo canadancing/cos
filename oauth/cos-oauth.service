@@ -1,0 +1,15 @@
+[Unit]
+Description=Caribbean of Soul Decap CMS GitHub OAuth Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/cos-oauth
+ExecStart=/usr/bin/node /home/ubuntu/cos-oauth/server.js
+Restart=always
+RestartSec=5
+EnvironmentFile=-/home/ubuntu/cos-oauth/.env
+
+[Install]
+WantedBy=multi-user.target

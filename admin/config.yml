@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: canadancing/cos
+  branch: main
+  base_url: https://cos.reopenai.net
+  auth_endpoint: api/auth
+
+# Uploaded images directory
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+# Direct saves
+publish_mode: simple
+
+collections:
+  - name: "menu"
+    label: "Menu Items & Pricing"
+    files:
+      - name: "items"
+        label: "Food Menu Items"
+        file: "content/menu.json"
+        fields:
+          - label: "Dishes & Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields:
+              - { label: "Unique ID", name: "id", widget: "string", hint: "e.g. braised-oxtail-plate (lowercase letters and hyphens)" }
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: [
+                  { label: "Main Plates", value: "plates" },
+                  { label: "Quick Bites", value: "bites" },
+                  { label: "Take-Home & Frozen Packs", value: "packs" }
+                ], default: "plates" }
+              - { label: "Price ($)", name: "price", widget: "number", value_type: "float" }
+              - { label: "Price Suffix (e.g. / dozen or / pack)", name: "priceSuffix", widget: "string", required: false }
+              - { label: "Badge Label", name: "badge", widget: "string", required: false, hint: "e.g. Chef's Signature, Customer Favorite, Feeds 5 People" }
+              - { label: "Badge Color", name: "badgeColor", widget: "select", options: ["amber", "orange", "emerald", "blue"], default: "amber", required: false }
+              - { label: "Dish Photo", name: "image", widget: "image", default: "assets/images/hero-dish.jpg" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Highlights / Tags", name: "highlights", widget: "list", required: false }
+              - { label: "Available / In Stock", name: "available", widget: "boolean", default: true }
+
+  - name: "settings"
+    label: "Site Settings & Hours"
+    files:
+      - name: "site_info"
+        label: "General Restaurant Info"
+        file: "content/settings.json"
+        fields:
+          - { label: "Restaurant Name", name: "restaurantName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Chef Name", name: "chefName", widget: "string" }
+          - { label: "Pickup Address", name: "pickupAddress", widget: "string" }
+          - { label: "City, Province & Postal Code", name: "cityStateZip", widget: "string" }
+          - { label: "Phone / WhatsApp", name: "phone", widget: "string" }
+          - { label: "Instagram Handle", name: "instagram", widget: "string" }
+          - { label: "Google Maps URL", name: "googleMapsUrl", widget: "string" }
+          - label: "Operating Hours"
+            name: "hours"
+            widget: "object"
+            fields:
+              - { label: "Thursday Hours", name: "thursday", widget: "string" }
+              - { label: "Friday Hours", name: "friday", widget: "string" }
+              - { label: "Saturday Hours", name: "saturday", widget: "string" }
+              - { label: "Sunday Hours", name: "sunday", widget: "string" }
+              - { label: "Prep Days Note", name: "prepDays", widget: "string" }
+          - label: "Weekend Delivery Info"
+            name: "delivery"
+            widget: "object"
+            fields:
+              - { label: "Delivery Days", name: "days", widget: "string" }
+              - { label: "Time Window", name: "timeWindow", widget: "string" }
+              - { label: "Coverage Area", name: "area", widget: "string" }
+              - { label: "Booking Notice", name: "notice", widget: "string" }

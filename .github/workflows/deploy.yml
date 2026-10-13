@@ -1,0 +1,32 @@
+name: Deploy Caribbean of Soul to OCI ARM
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+
+jobs:
+  deploy:
+    name: Sync files to OCI ARM
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.OCI_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 2222 132.145.102.218 >> ~/.ssh/known_hosts
+
+      - name: Rsync to /var/www/cos-food/
+        run: |
+          rsync -avz -e "ssh -p 2222" \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.vscode' \
+            ./ ubuntu@132.145.102.218:/var/www/cos-food/

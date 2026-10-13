@@ -1,0 +1,24 @@
+{
+  "restaurantName": "Caribbean of Soul",
+  "tagline": "Authentic Soul Food on North Shore, Vancouver",
+  "chefName": "Chef Valma",
+  "yearFounded": "2013",
+  "pickupAddress": "1650 Lonsdale Ave",
+  "cityStateZip": "North Vancouver, BC V7M 2J6",
+  "phone": "(604) 555-0199",
+  "instagram": "caribbeanofsoul",
+  "googleMapsUrl": "https://maps.google.com/?q=1650+Lonsdale+Ave+North+Vancouver+BC",
+  "hours": {
+    "thursday": "11:00 AM – 6:00 PM",
+    "friday": "11:00 AM – 6:00 PM",
+    "saturday": "11:00 AM – 6:00 PM",
+    "sunday": "11:00 AM – 6:00 PM",
+    "prepDays": "Monday – Wednesday (Kitchen Prep)"
+  },
+  "delivery": {
+    "days": "Every Friday & Saturday",
+    "timeWindow": "11:30 AM – 2:30 PM",
+    "area": "North Vancouver Residents Only",
+    "notice": "Advance orders required before Thursday 8 PM for weekend delivery slots."
+  }
+}

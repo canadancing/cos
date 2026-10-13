@@ -1161,6 +1161,8 @@
           <span class="text-slate-400">cos.reopenai.net</span>
           <span>•</span>
           <span>Homemade Food with Love</span>
+          <span>•</span>
+          <a href="/admin/" class="text-slate-500 hover:text-amber-400 transition">CMS Admin</a>
         </div>
       </div>
 
@@ -1239,7 +1241,7 @@
         <!-- Quick Item Checklist -->
         <div>
           <label class="block text-slate-300 font-semibold mb-2">Select Dishes / Items</label>
-          <div class="space-y-2 max-h-48 overflow-y-auto p-2 bg-slate-900/80 rounded-xl border border-slate-800">
+          <div id="orderChecklistContainer" class="space-y-2 max-h-48 overflow-y-auto p-2 bg-slate-900/80 rounded-xl border border-slate-800">
             
             <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer">
               <span class="flex items-center gap-2 text-slate-200">
@@ -1341,11 +1343,120 @@
 
   <!-- Client-side Interactivity Script -->
   <script>
-    // Initialize Lucide Icons
+    let currentFilter = 'all';
+
+    // Initialize Lucide Icons and Dynamic Content
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       initLiveHours();
+      loadDynamicContent();
     });
+
+    // Render Menu Cards from content/menu.json
+    function renderMenuCards(items) {
+      const grid = document.getElementById('menuItemsGrid');
+      if (!grid || !Array.isArray(items) || items.length === 0) return;
+
+      grid.innerHTML = items.map(item => {
+        const isSpecialPlatter = item.badge && item.badge.includes('Feeds 5');
+        const borderClass = isSpecialPlatter 
+          ? 'border-2 border-amber-500/40 hover:border-amber-400 shadow-glow-amber' 
+          : 'border border-slate-800 hover:border-amber-500/50';
+
+        let badgeBg = 'bg-amber-500 text-white';
+        if (item.badgeColor === 'orange') badgeBg = 'bg-orange-600 text-white';
+        else if (item.badgeColor === 'emerald') badgeBg = 'bg-emerald-600 text-white';
+        else if (item.badgeColor === 'blue') badgeBg = 'bg-blue-600 text-white';
+        else if (isSpecialPlatter) badgeBg = 'bg-gradient-to-r from-amber-500 to-orange-600 text-white font-extrabold';
+
+        const priceSuffix = item.priceSuffix ? `<span class="text-xs font-normal text-slate-300"> ${item.priceSuffix}</span>` : '';
+        const isAvailable = item.available !== false;
+
+        const highlightsHtml = (item.highlights && item.highlights.length) 
+          ? item.highlights.map(h => `<span class="bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">${h}</span>`).join('')
+          : '';
+
+        const safeName = (item.name || '').replace(/'/g, "\\'");
+        const btnHtml = isAvailable 
+          ? `<button onclick="addToOrderQuick('${safeName}', ${item.price})" class="w-full py-2.5 px-4 rounded-xl ${isSpecialPlatter ? 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-md' : 'bg-slate-800 hover:bg-amber-500 hover:text-white text-slate-200 text-sm font-semibold border border-slate-700'} transition flex items-center justify-center gap-2">
+               <i data-lucide="plus-circle" class="w-4 h-4 text-amber-400"></i>
+               <span>Add to Advance Order</span>
+             </button>`
+          : `<button disabled class="w-full py-2.5 px-4 rounded-xl bg-slate-900 text-slate-500 text-sm font-semibold border border-slate-800 cursor-not-allowed flex items-center justify-center gap-2">
+               <span>Sold Out Today</span>
+             </button>`;
+
+        return `
+          <div class="menu-item-card group glass-card rounded-2xl overflow-hidden ${borderClass} transition-all duration-300 flex flex-col justify-between" data-category="${item.category || 'plates'}">
+            <div>
+              <div class="relative h-52 sm:h-56 overflow-hidden bg-slate-900">
+                <img src="${item.image || 'assets/images/hero-dish.jpg'}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                ${item.badge ? `<span class="absolute top-3 left-3 ${badgeBg} text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">${item.badge}</span>` : ''}
+                <span class="absolute bottom-3 right-3 text-2xl font-extrabold text-amber-400 bg-brand-dark/80 backdrop-blur px-3 py-1 rounded-xl border border-amber-500/30">
+                  $${item.price}${priceSuffix}
+                </span>
+              </div>
+
+              <div class="p-6 space-y-3">
+                <div class="flex items-start justify-between">
+                  <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                    ${item.name}
+                  </h3>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  ${item.description || ''}
+                </p>
+                ${highlightsHtml ? `<div class="flex flex-wrap gap-2 pt-2 text-[11px] text-slate-400">${highlightsHtml}</div>` : ''}
+              </div>
+            </div>
+
+            <div class="px-6 pb-6 pt-2">
+              ${btnHtml}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      if (window.lucide) lucide.createIcons();
+      filterMenu(currentFilter);
+    }
+
+    // Render Order Checklist in Modal
+    function renderOrderChecklist(items) {
+      const container = document.getElementById('orderChecklistContainer');
+      if (!container || !Array.isArray(items) || items.length === 0) return;
+
+      container.innerHTML = items.map(item => {
+        const isAvailable = item.available !== false;
+        const valueStr = `${item.name} ($${item.price}${item.priceSuffix ? ' ' + item.priceSuffix : ''})`;
+        return `
+          <label class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-800 cursor-pointer ${!isAvailable ? 'opacity-50' : ''}">
+            <span class="flex items-center gap-2 text-slate-200">
+              <input type="checkbox" class="order-dish-cb text-amber-500 rounded" value="${valueStr}" data-price="${item.price}" ${!isAvailable ? 'disabled' : ''}>
+              <span>${item.name} ${!isAvailable ? '<span class="text-red-400 text-xs">(Sold Out)</span>' : ''}</span>
+            </span>
+            <span class="text-amber-400 font-bold">$${item.price}${item.priceSuffix ? '<span class="text-xs font-normal text-slate-400"> ' + item.priceSuffix + '</span>' : ''}</span>
+          </label>
+        `;
+      }).join('');
+    }
+
+    // Load Dynamic Content from Decap CMS JSON files
+    async function loadDynamicContent() {
+      try {
+        const menuRes = await fetch('content/menu.json?t=' + Date.now());
+        if (menuRes.ok) {
+          const menuData = await menuRes.json();
+          if (menuData && Array.isArray(menuData.items)) {
+            renderMenuCards(menuData.items);
+            renderOrderChecklist(menuData.items);
+          }
+        }
+      } catch (err) {
+        console.log('Serving initial static menu fallback', err);
+      }
+    }
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -1378,6 +1489,7 @@
 
     // Menu Category Filtering
     function filterMenu(category) {
+      currentFilter = category;
       const cards = document.querySelectorAll('.menu-item-card');
       const buttons = document.querySelectorAll('.menu-tab-btn');
 

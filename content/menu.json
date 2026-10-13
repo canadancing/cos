@@ -1,0 +1,105 @@
+{
+  "items": [
+    {
+      "id": "braised-oxtail-plate",
+      "name": "Braised Oxtail Plate",
+      "category": "plates",
+      "price": 25,
+      "priceSuffix": "",
+      "badge": "Chef's Signature",
+      "badgeColor": "amber",
+      "image": "assets/images/hero-dish.jpg",
+      "description": "Slow-braised until meltingly tender in rich, savory Caribbean brown sauce. Served with Island-style rice & peas, fresh grilled vegetables, and sweet fried plantain.",
+      "highlights": [
+        "🍛 Island Rice",
+        "🍌 Fried Plantain",
+        "🥦 Grilled Veg"
+      ],
+      "available": true
+    },
+    {
+      "id": "authentic-jerk-chicken-plate",
+      "name": "Authentic Jerk Chicken Plate",
+      "category": "plates",
+      "price": 20,
+      "priceSuffix": "",
+      "badge": "Customer Favorite",
+      "badgeColor": "orange",
+      "image": "assets/images/hero-dish.jpg",
+      "description": "Marinated for 24+ hours in Chef Valma’s signature allspice, thyme, garlic, and Scotch bonnet marinade, then char-grilled to juicy perfection. Served with Island rice, grilled veg, and fried plantain.",
+      "highlights": [
+        "🔥 Char-Grilled",
+        "🍛 Island Rice",
+        "🍌 Fried Plantain"
+      ],
+      "available": true
+    },
+    {
+      "id": "caribbean-family-platter",
+      "name": "Caribbean Family Platter",
+      "category": "plates",
+      "price": 100,
+      "priceSuffix": "",
+      "badge": "Feeds 5 People",
+      "badgeColor": "amber",
+      "image": "assets/images/hero-dish.jpg",
+      "description": "The ultimate North Shore family feast! Includes 5 generous pieces of Jerk Chicken, tender braised Oxtail, a large tray of Island-style rice, fried sweet plantains, and grilled seasonal vegetables.",
+      "highlights": [
+        "⭐ 5x Jerk Chicken",
+        "⭐ Braised Oxtail",
+        "⭐ Feeds 5 ($20/person)"
+      ],
+      "available": true
+    },
+    {
+      "id": "jamaican-beef-patty-combo",
+      "name": "Jamaican Beef Patty Combo",
+      "category": "bites",
+      "price": 12,
+      "priceSuffix": "",
+      "badge": "Classic Combo",
+      "badgeColor": "emerald",
+      "image": "assets/images/patties-bread.jpg",
+      "description": "Freshly baked, ultra-flaky Jamaican beef patty tucked inside warm, slightly sweet Coco Bread, paired with a chilled beverage of your choice.",
+      "highlights": [
+        "🥟 Beef Patty",
+        "🍞 Warm Coco Bread",
+        "🥤 Cold Drink"
+      ],
+      "available": true
+    },
+    {
+      "id": "jamaican-patties-dozen",
+      "name": "Jamaican Patties (Dozen)",
+      "category": "packs",
+      "price": 84,
+      "priceSuffix": "/ dozen",
+      "badge": "Fresh or Frozen",
+      "badgeColor": "blue",
+      "image": "assets/images/patties-bread.jpg",
+      "description": "Stock your home freezer with Chef Valma’s handmade patties. Choose between Beef, Chicken, or Veggie. Perfect for quick lunches or after-school snacks ($7 each).",
+      "highlights": [
+        "📦 12 Patties",
+        "❄️ Freezer Ready",
+        "🌱 Veggie Option"
+      ],
+      "available": true
+    },
+    {
+      "id": "coco-bread-roti-shells",
+      "name": "Coco Bread & Roti Shells",
+      "category": "packs",
+      "price": 20,
+      "priceSuffix": "/ pack",
+      "badge": "Fresh Island Bakes",
+      "badgeColor": "amber",
+      "image": "assets/images/patties-bread.jpg",
+      "description": "Authentic Caribbean breads baked with coconut sweetness. Stock up on tender, flaky breads ready for your curries, patties, and stews.",
+      "highlights": [
+        "• Coco Bread (1 Dozen) - $20",
+        "• Traditional Roti Shells (Pack of 3) - $20"
+      ],
+      "available": true
+    }
+  ]
+}
