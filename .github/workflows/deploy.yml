@@ -19,13 +19,13 @@ jobs:
       - name: Configure SSH Key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.OCI_SSH_KEY }}" > ~/.ssh/id_rsa
+          printf "%s\n" "${{ secrets.OCI_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 2222 132.145.102.218 >> ~/.ssh/known_hosts
+          ssh-keyscan -p 2222 -H 132.145.102.218 >> ~/.ssh/known_hosts
 
       - name: Rsync to /var/www/cos-food/
         run: |
-          rsync -avz -e "ssh -p 2222" \
+          rsync -avz -e "ssh -p 2222 -i ~/.ssh/id_rsa -o StrictHostKeyChecking=accept-new" \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='.vscode' \
